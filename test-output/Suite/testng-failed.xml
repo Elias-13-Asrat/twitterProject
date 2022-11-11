@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="listeners.TestListeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Send Message Test(failed)">
+    <classes>
+      <class name="testCases.SendMessageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="TestTwo" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testCases.SendMessageTest -->
+    </classes>
+  </test> <!-- Send Message Test(failed) -->
+  <test thread-count="5" parallel="tests" name="Login and Checking Notification Menu Options Test(failed)">
+    <classes>
+      <class name="testCases.LoginTest2">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="LoginTest" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- testCases.LoginTest2 -->
+    </classes>
+  </test> <!-- Login and Checking Notification Menu Options Test(failed) -->
+  <test thread-count="5" parallel="tests" name="Create New Tweet Test(failed)">
+    <classes>
+      <class name="testCases.CreateNewTweetTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="NewTweetTest" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- testCases.CreateNewTweetTest -->
+    </classes>
+  </test> <!-- Create New Tweet Test(failed) -->
+  <test thread-count="5" parallel="tests" name="Login and Checking Explore Menu Options Test(failed)">
+    <classes>
+      <class name="testCases.LoginTest1">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="LoginTest" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- testCases.LoginTest1 -->
+    </classes>
+  </test> <!-- Login and Checking Explore Menu Options Test(failed) -->
+  <test thread-count="5" parallel="tests" name="Searching for Twitter Test(failed)">
+    <classes>
+      <class name="testCases.SearchTwitterTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="TwitterSearchTest" invocation-numbers="0 2"/>
+        </methods>
+      </class> <!-- testCases.SearchTwitterTest -->
+    </classes>
+  </test> <!-- Searching for Twitter Test(failed) -->
+  <test thread-count="5" parallel="tests" name="Profile Update Test(failed)">
+    <classes>
+      <class name="testCases.UpdateProfileTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="LoginTest" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- testCases.UpdateProfileTest -->
+    </classes>
+  </test> <!-- Profile Update Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

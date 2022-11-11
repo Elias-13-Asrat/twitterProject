@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 7 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\eclipse folders\POM_PF_TWO\src\test\resources\TestRunners\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">6 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">16 methods, 7 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.LoginTest2" class="method navigator-link" hash-for-method="LoginTest( @EliasZerihune, 1234Abcd, fireFox, https://www.twitter.com)">LoginTest( @EliasZerihune, 1234Abcd, fireFox, https://www.twitter.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.LoginTest1" class="method navigator-link" hash-for-method="LoginTest( @EliasZerihune, 1234Abcd, fireFox, https://www.twitter.com)">LoginTest( @EliasZerihune, 1234Abcd, fireFox, https://www.twitter.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.UpdateProfileTest" class="method navigator-link" hash-for-method="LoginTest( @EliasZerihune, 1234Abcd, fireFox, https://www.twitter.com)">LoginTest( @EliasZerihune, 1234Abcd, fireFox, https://www.twitter.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CreateNewTweetTest" class="method navigator-link" hash-for-method="NewTweetTest( @EliasZerihune, 1234Abcd, fireFox, https://www.twitter.com, Hello EveryBody)">NewTweetTest( @EliasZerihune, 1234Abcd, fireFox, https://www.twitter.com, Hello EveryBody)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.SendMessageTest" class="method navigator-link" hash-for-method="TestTwo( @EZerihune, 1234Abcd, chrome, https://www.twitter.com, Hello, EliasZerihune)">TestTwo( @EZerihune, 1234Abcd, chrome, https://www.twitter.com, Hello, EliasZerihune)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.SearchTwitterTest" class="method navigator-link" hash-for-method="TwitterSearchTest( @ZerihuneElias, 1234Abcd, chrome, https://www.twitter.com, Animals)">TwitterSearchTest( @ZerihuneElias, 1234Abcd, chrome, https://www.twitter.com, Animals)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.SearchTwitterTest" class="method navigator-link" hash-for-method="TwitterSearchTest( @EZerihune, 1234Abcd, chrome, https://www.twitter.com, Covid-19)">TwitterSearchTest( @EZerihune, 1234Abcd, chrome, https://www.twitter.com, Covid-19)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.LoginTest2" class="method navigator-link" hash-for-method="LoginTest( @ZerihuneElias, 1234Abcd, chrome, https://www.twitter.com)">LoginTest( @ZerihuneElias, 1234Abcd, chrome, https://www.twitter.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.LoginTest2" class="method navigator-link" hash-for-method="LoginTest( @EZerihune, 1234Abcd, chrome, https://www.twitter.com)">LoginTest( @EZerihune, 1234Abcd, chrome, https://www.twitter.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.LoginTest1" class="method navigator-link" hash-for-method="LoginTest( @ZerihuneElias, 1234Abcd, chrome, https://www.twitter.com)">LoginTest( @ZerihuneElias, 1234Abcd, chrome, https://www.twitter.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.LoginTest1" class="method navigator-link" hash-for-method="LoginTest( @EZerihune, 1234Abcd, chrome, https://www.twitter.com)">LoginTest( @EZerihune, 1234Abcd, chrome, https://www.twitter.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.UpdateProfileTest" class="method navigator-link" hash-for-method="LoginTest( @EZerihune, 1234Abcd, chrome, https://www.twitter.com)">LoginTest( @EZerihune, 1234Abcd, chrome, https://www.twitter.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.UpdateProfileTest" class="method navigator-link" hash-for-method="LoginTest( @ZerihuneElias, 1234Abcd, chrome, https://www.twitter.com)">LoginTest( @ZerihuneElias, 1234Abcd, chrome, https://www.twitter.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CreateNewTweetTest" class="method navigator-link" hash-for-method="NewTweetTest( @EZerihune, 1234Abcd, chrome, https://www.twitter.com, Hello World)">NewTweetTest( @EZerihune, 1234Abcd, chrome, https://www.twitter.com, Hello World)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CreateNewTweetTest" class="method navigator-link" hash-for-method="NewTweetTest( @ZerihuneElias, 1234Abcd, chrome, https://www.twitter.com, Beutiful Day)">NewTweetTest( @ZerihuneElias, 1234Abcd, chrome, https://www.twitter.com, Beutiful Day)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.SearchTwitterTest" class="method navigator-link" hash-for-method="TwitterSearchTest( @EliasZerihune, 1234Abcd, fireFox, https://www.twitter.com, Technology)">TwitterSearchTest( @EliasZerihune, 1234Abcd, fireFox, https://www.twitter.com, Technology)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testCases.CreateNewTweetTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="NewTweetTest( @EliasZerihune, 1234Abcd, fireFox, https://www.twitter.com, Hello EveryBody)">
+                  </a> <!-- NewTweetTest( @EliasZerihune, 1234Abcd, fireFox, https://www.twitter.com, Hello EveryBody) -->
+                  <span class="method-name">NewTweetTest</span>
+                  <span class="parameters">( @EliasZerihune, 1234Abcd, fireFox, https://www.twitter.com, Hello EveryBody)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[FirefoxDriver: firefox on WINDOWS (e797340c-85d5-4883-8096-79bdb28b0951)] -&gt; xpath: //span[text()=&apos;Tweet&apos;]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
+System info: host: &apos;DESKTOP-22HC58E&apos;, ip: &apos;192.168.0.12&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 101.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220526203855, moz:debuggerAddress: localhost:64997, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 16820, moz:profile: C:\Users\kmerk\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:64997/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e797340c-85d5-4883-8096-79bdb28b0951
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at pageObject.BasePage.waitForPageToLoad(BasePage.java:105)
+	at pageObject.BasePage.openPage(BasePage.java:64)
+	at pageObject.TwitterPasswordPage.goPassword(TwitterPasswordPage.java:52)
+	at testCases.CreateNewTweetTest.NewTweetTest(CreateNewTweetTest.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testCases.SendMessageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestTwo( @EZerihune, 1234Abcd, chrome, https://www.twitter.com, Hello, EliasZerihune)">
+                  </a> <!-- TestTwo( @EZerihune, 1234Abcd, chrome, https://www.twitter.com, Hello, EliasZerihune) -->
+                  <span class="method-name">TestTwo</span>
+                  <span class="parameters">( @EZerihune, 1234Abcd, chrome, https://www.twitter.com, Hello, EliasZerihune)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //span[text()=&apos;New message&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at pageObject.BasePage.waitForPageToLoad(BasePage.java:105)
+	at pageObject.BasePage.openPage(BasePage.java:64)
+	at pageObject.TwitterUserAccountPage.goToMessagePage(TwitterUserAccountPage.java:111)
+	at testCases.SendMessageTest.TestTwo(SendMessageTest.java:53)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;New message&apos;]&quot;}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
+System info: host: &apos;DESKTOP-22HC58E&apos;, ip: &apos;192.168.0.12&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [870f20f7f8df1349d874103abc9fed70, findElement {using=xpath, value=//span[text()=&apos;New message&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\kmerk\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50944}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50944/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 870f20f7f8df1349d874103abc9fed70
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy32.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 27 more
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testCases.SearchTwitterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TwitterSearchTest( @ZerihuneElias, 1234Abcd, chrome, https://www.twitter.com, Animals)">
+                  </a> <!-- TwitterSearchTest( @ZerihuneElias, 1234Abcd, chrome, https://www.twitter.com, Animals) -->
+                  <span class="method-name">TwitterSearchTest</span>
+                  <span class="parameters">( @ZerihuneElias, 1234Abcd, chrome, https://www.twitter.com, Animals)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //span[text()=&apos;Happening now&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at pageObject.BasePage.waitForPageToLoad(BasePage.java:105)
+	at pageObject.BasePage.openPage(BasePage.java:64)
+	at pageObject.TwitterLoginPage.open(TwitterLoginPage.java:62)
+	at testCases.SearchTwitterTest.TwitterSearchTest(SearchTwitterTest.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Happening now&apos;]&quot;}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
+System info: host: &apos;DESKTOP-22HC58E&apos;, ip: &apos;192.168.0.12&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f883a0f87336c4e9d7615e27b2a8215e, findElement {using=xpath, value=//span[text()=&apos;Happening now&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\kmerk\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52417}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52417/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f883a0f87336c4e9d7615e27b2a8215e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy32.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 27 more
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TwitterSearchTest( @EZerihune, 1234Abcd, chrome, https://www.twitter.com, Covid-19)">
+                  </a> <!-- TwitterSearchTest( @EZerihune, 1234Abcd, chrome, https://www.twitter.com, Covid-19) -->
+                  <span class="method-name">TwitterSearchTest</span>
+                  <span class="parameters">( @EZerihune, 1234Abcd, chrome, https://www.twitter.com, Covid-19)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //span[text()=&apos;Happening now&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at pageObject.BasePage.waitForPageToLoad(BasePage.java:105)
+	at pageObject.BasePage.openPage(BasePage.java:64)
+	at pageObject.TwitterLoginPage.open(TwitterLoginPage.java:62)
+	at testCases.SearchTwitterTest.TwitterSearchTest(SearchTwitterTest.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Happening now&apos;]&quot;}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
+System info: host: &apos;DESKTOP-22HC58E&apos;, ip: &apos;192.168.0.12&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3005e8091550425846838e8f7df5e888, findElement {using=xpath, value=//span[text()=&apos;Happening now&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\kmerk\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50949}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50949/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3005e8091550425846838e8f7df5e888
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy32.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 27 more
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testCases.LoginTest2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginTest( @EliasZerihune, 1234Abcd, fireFox, https://www.twitter.com)">
+                  </a> <!-- LoginTest( @EliasZerihune, 1234Abcd, fireFox, https://www.twitter.com) -->
+                  <span class="method-name">LoginTest</span>
+                  <span class="parameters">( @EliasZerihune, 1234Abcd, fireFox, https://www.twitter.com)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //span[text()=&apos;Happening now&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at pageObject.BasePage.waitForPageToLoad(BasePage.java:105)
+	at pageObject.BasePage.openPage(BasePage.java:64)
+	at pageObject.TwitterLoginPage.open(TwitterLoginPage.java:62)
+	at testCases.LoginTest2.LoginTest(LoginTest2.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //span[text()=&apos;Happening now&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
+System info: host: &apos;DESKTOP-22HC58E&apos;, ip: &apos;192.168.0.12&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [d92cbe08-987d-4eba-a572-2b95191e5610, findElement {using=xpath, value=//span[text()=&apos;Happening now&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 101.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220526203855, moz:debuggerAddress: localhost:54589, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 16816, moz:profile: C:\Users\kmerk\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:54589/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d92cbe08-987d-4eba-a572-2b95191e5610
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy32.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 27 more
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testCases.UpdateProfileTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginTest( @EliasZerihune, 1234Abcd, fireFox, https://www.twitter.com)">
+                  </a> <!-- LoginTest( @EliasZerihune, 1234Abcd, fireFox, https://www.twitter.com) -->
+                  <span class="method-name">LoginTest</span>
+                  <span class="parameters">( @EliasZerihune, 1234Abcd, fireFox, https://www.twitter.com)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[FirefoxDriver: firefox on WINDOWS (af1e0867-5cfb-4f1a-b838-9309b6a5833a)] -&gt; xpath: //span[text()=&apos;Tweet&apos;]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
+System info: host: &apos;DESKTOP-22HC58E&apos;, ip: &apos;192.168.0.12&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 101.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220526203855, moz:debuggerAddress: localhost:65058, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 25272, moz:profile: C:\Users\kmerk\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:65058/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: af1e0867-5cfb-4f1a-b838-9309b6a5833a
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at pageObject.BasePage.waitForPageToLoad(BasePage.java:105)
+	at pageObject.BasePage.openPage(BasePage.java:64)
+	at pageObject.TwitterPasswordPage.goPassword(TwitterPasswordPage.java:52)
+	at testCases.UpdateProfileTest.LoginTest(UpdateProfileTest.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testCases.LoginTest1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginTest( @EliasZerihune, 1234Abcd, fireFox, https://www.twitter.com)">
+                  </a> <!-- LoginTest( @EliasZerihune, 1234Abcd, fireFox, https://www.twitter.com) -->
+                  <span class="method-name">LoginTest</span>
+                  <span class="parameters">( @EliasZerihune, 1234Abcd, fireFox, https://www.twitter.com)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[FirefoxDriver: firefox on WINDOWS (aace3415-866e-46bd-b01b-635bb686f6b7)] -&gt; xpath: //span[text()=&apos;Tweet&apos;]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
+System info: host: &apos;DESKTOP-22HC58E&apos;, ip: &apos;192.168.0.12&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 101.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220526203855, moz:debuggerAddress: localhost:53787, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 10896, moz:profile: C:\Users\kmerk\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:53787/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: aace3415-866e-46bd-b01b-635bb686f6b7
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at pageObject.BasePage.waitForPageToLoad(BasePage.java:105)
+	at pageObject.BasePage.openPage(BasePage.java:64)
+	at pageObject.TwitterPasswordPage.goPassword(TwitterPasswordPage.java:52)
+	at testCases.LoginTest1.LoginTest(LoginTest1.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.CreateNewTweetTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="NewTweetTest( @EZerihune, 1234Abcd, chrome, https://www.twitter.com, Hello World)">
+                  </a> <!-- NewTweetTest( @EZerihune, 1234Abcd, chrome, https://www.twitter.com, Hello World) -->
+                  <span class="method-name">NewTweetTest</span>
+                  <span class="parameters">( @EZerihune, 1234Abcd, chrome, https://www.twitter.com, Hello World)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="NewTweetTest( @ZerihuneElias, 1234Abcd, chrome, https://www.twitter.com, Beutiful Day)">
+                  </a> <!-- NewTweetTest( @ZerihuneElias, 1234Abcd, chrome, https://www.twitter.com, Beutiful Day) -->
+                  <span class="method-name">NewTweetTest</span>
+                  <span class="parameters">( @ZerihuneElias, 1234Abcd, chrome, https://www.twitter.com, Beutiful Day)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.SearchTwitterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TwitterSearchTest( @EliasZerihune, 1234Abcd, fireFox, https://www.twitter.com, Technology)">
+                  </a> <!-- TwitterSearchTest( @EliasZerihune, 1234Abcd, fireFox, https://www.twitter.com, Technology) -->
+                  <span class="method-name">TwitterSearchTest</span>
+                  <span class="parameters">( @EliasZerihune, 1234Abcd, fireFox, https://www.twitter.com, Technology)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.LoginTest2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginTest( @ZerihuneElias, 1234Abcd, chrome, https://www.twitter.com)">
+                  </a> <!-- LoginTest( @ZerihuneElias, 1234Abcd, chrome, https://www.twitter.com) -->
+                  <span class="method-name">LoginTest</span>
+                  <span class="parameters">( @ZerihuneElias, 1234Abcd, chrome, https://www.twitter.com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginTest( @EZerihune, 1234Abcd, chrome, https://www.twitter.com)">
+                  </a> <!-- LoginTest( @EZerihune, 1234Abcd, chrome, https://www.twitter.com) -->
+                  <span class="method-name">LoginTest</span>
+                  <span class="parameters">( @EZerihune, 1234Abcd, chrome, https://www.twitter.com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.UpdateProfileTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginTest( @EZerihune, 1234Abcd, chrome, https://www.twitter.com)">
+                  </a> <!-- LoginTest( @EZerihune, 1234Abcd, chrome, https://www.twitter.com) -->
+                  <span class="method-name">LoginTest</span>
+                  <span class="parameters">( @EZerihune, 1234Abcd, chrome, https://www.twitter.com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginTest( @ZerihuneElias, 1234Abcd, chrome, https://www.twitter.com)">
+                  </a> <!-- LoginTest( @ZerihuneElias, 1234Abcd, chrome, https://www.twitter.com) -->
+                  <span class="method-name">LoginTest</span>
+                  <span class="parameters">( @ZerihuneElias, 1234Abcd, chrome, https://www.twitter.com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.LoginTest1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginTest( @ZerihuneElias, 1234Abcd, chrome, https://www.twitter.com)">
+                  </a> <!-- LoginTest( @ZerihuneElias, 1234Abcd, chrome, https://www.twitter.com) -->
+                  <span class="method-name">LoginTest</span>
+                  <span class="parameters">( @ZerihuneElias, 1234Abcd, chrome, https://www.twitter.com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginTest( @EZerihune, 1234Abcd, chrome, https://www.twitter.com)">
+                  </a> <!-- LoginTest( @EZerihune, 1234Abcd, chrome, https://www.twitter.com) -->
+                  <span class="method-name">LoginTest</span>
+                  <span class="parameters">( @EZerihune, 1234Abcd, chrome, https://www.twitter.com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\eclipse folders\POM_PF_TWO\src\test\resources\TestRunners\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;listeners.TestListeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Login and Checking Explore Menu Options Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testCases.LoginTest1&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Login and Checking Explore Menu Options Test --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Login and Checking Notification Menu Options Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testCases.LoginTest2&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Login and Checking Notification Menu Options Test --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Send Message Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testCases.SendMessageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Send Message Test --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Searching for Twitter Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testCases.SearchTwitterTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Searching for Twitter Test --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Create New Tweet Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testCases.CreateNewTweetTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Create New Tweet Test --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Profile Update Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testCases.UpdateProfileTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Profile Update Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Login and Checking Explore Menu Options Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Login and Checking Notification Menu Options Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Send Message Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Searching for Twitter Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Create New Tweet Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Profile Update Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(16);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'TwitterSearchTest')
+data.setCell(0, 2, 'testCases.SearchTwitterTest')
+data.setCell(0, 3, 42215);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TestTwo')
+data.setCell(1, 2, 'testCases.SendMessageTest')
+data.setCell(1, 3, 39445);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'NewTweetTest')
+data.setCell(2, 2, 'testCases.CreateNewTweetTest')
+data.setCell(2, 3, 39290);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'LoginTest')
+data.setCell(3, 2, 'testCases.UpdateProfileTest')
+data.setCell(3, 3, 38648);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'LoginTest')
+data.setCell(4, 2, 'testCases.LoginTest1')
+data.setCell(4, 3, 38040);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'LoginTest')
+data.setCell(5, 2, 'testCases.LoginTest2')
+data.setCell(5, 3, 35333);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'LoginTest')
+data.setCell(6, 2, 'testCases.LoginTest1')
+data.setCell(6, 3, 28198);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'TwitterSearchTest')
+data.setCell(7, 2, 'testCases.SearchTwitterTest')
+data.setCell(7, 3, 28135);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'NewTweetTest')
+data.setCell(8, 2, 'testCases.CreateNewTweetTest')
+data.setCell(8, 3, 27645);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'LoginTest')
+data.setCell(9, 2, 'testCases.LoginTest2')
+data.setCell(9, 3, 26629);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'TwitterSearchTest')
+data.setCell(10, 2, 'testCases.SearchTwitterTest')
+data.setCell(10, 3, 25993);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'LoginTest')
+data.setCell(11, 2, 'testCases.LoginTest1')
+data.setCell(11, 3, 23026);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'NewTweetTest')
+data.setCell(12, 2, 'testCases.CreateNewTweetTest')
+data.setCell(12, 3, 19962);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'LoginTest')
+data.setCell(13, 2, 'testCases.LoginTest2')
+data.setCell(13, 3, 18368);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'LoginTest')
+data.setCell(14, 2, 'testCases.UpdateProfileTest')
+data.setCell(14, 3, 15560);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'LoginTest')
+data.setCell(15, 2, 'testCases.UpdateProfileTest')
+data.setCell(15, 3, 12243);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.UpdateProfileTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.LoginTest1</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">LoginTest( @EZerihune, 1234Abcd, chrome, https://www.twitter.com)</span>
+                <span class="method-start">1653 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.LoginTest2</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">LoginTest( @EZerihune, 1234Abcd, chrome, https://www.twitter.com)</span>
+                <span class="method-start">1653 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.SendMessageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TestTwo( @EZerihune, 1234Abcd, chrome, https://www.twitter.com, Hello, EliasZerihune)</span>
+                <span class="method-start">1653 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.SearchTwitterTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TwitterSearchTest( @EZerihune, 1234Abcd, chrome, https://www.twitter.com, Covid-19)</span>
+                <span class="method-start">1653 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.CreateNewTweetTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">NewTweetTest( @EZerihune, 1234Abcd, chrome, https://www.twitter.com, Hello World)</span>
+                <span class="method-start">1653 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.LoginTest2</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">LoginTest( @EliasZerihune, 1234Abcd, fireFox, https://www.twitter.com)</span>
+                <span class="method-start">28303 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.CreateNewTweetTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">NewTweetTest( @EliasZerihune, 1234Abcd, fireFox, https://www.twitter.com, Hello EveryBody)</span>
+                <span class="method-start">29300 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.LoginTest1</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">LoginTest( @EliasZerihune, 1234Abcd, fireFox, https://www.twitter.com)</span>
+                <span class="method-start">29859 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.SearchTwitterTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">TwitterSearchTest( @EliasZerihune, 1234Abcd, fireFox, https://www.twitter.com, Technology)</span>
+                <span class="method-start">30351 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.UpdateProfileTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">LoginTest( @EZerihune, 1234Abcd, chrome, https://www.twitter.com)</span>
+                <span class="method-start">42145 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">LoginTest( @EliasZerihune, 1234Abcd, fireFox, https://www.twitter.com)</span>
+                <span class="method-start">57708 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.LoginTest2</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">LoginTest( @ZerihuneElias, 1234Abcd, chrome, https://www.twitter.com)</span>
+                <span class="method-start">63828 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.LoginTest1</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">LoginTest( @ZerihuneElias, 1234Abcd, chrome, https://www.twitter.com)</span>
+                <span class="method-start">68863 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.CreateNewTweetTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">NewTweetTest( @ZerihuneElias, 1234Abcd, chrome, https://www.twitter.com, Beutiful Day)</span>
+                <span class="method-start">70218 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.SearchTwitterTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TwitterSearchTest( @ZerihuneElias, 1234Abcd, chrome, https://www.twitter.com, Animals)</span>
+                <span class="method-start">72570 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.UpdateProfileTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">LoginTest( @ZerihuneElias, 1234Abcd, chrome, https://www.twitter.com)</span>
+                <span class="method-start">96689 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">108953 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
